@@ -37,7 +37,7 @@ app.get('/fullertonindia/:fileName',function (req,res){
 	
 	fs.readFile('./fullertonindia/'+fileName,function(err,data){
 		console.log(data);
-			res.send(JSON.parse(fullertonindia.toString()));
+			res.send(JSON.parse(data.toString()));
 	});
 	
 	
